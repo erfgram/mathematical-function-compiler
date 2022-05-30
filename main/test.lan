@@ -1,8 +1,8 @@
-VAR x = 1
+VAR x = -8
 PRINT(SQRT(x^2 + 2*x + 4))
 PRINT("----------")
 PRINT(x^2 + 5 * x - 24)
 PRINT("----------")
-PRINT(ABS(SIN(180)+(-5)) + LOG(x))
+#PRINT(ABS(SIN(180)+(-5)) + LOG(x))
 PRINT("----------")
 PRINT(x^3 - 3 * (x^2) + 2 * x)
