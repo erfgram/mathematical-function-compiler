@@ -1,4 +1,4 @@
-from errors import IllegalCharError, ExpectedCharError
+from errors import IllegalCharError
 from constant import DIGITS, LETTERS, LETTERS_DIGITS
 from position import Position
 from tokens import *
@@ -77,7 +77,7 @@ class Lexer:
 
   def make_number(self):
     num_str = ''
-    dot_count = 0
+    dot_count = 0           
     pos_start = self.pos.copy()
 
     while self.current_char != None and self.current_char in DIGITS + '.':

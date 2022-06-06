@@ -1,6 +1,6 @@
 from errors import InvalidSyntaxError
 from tokens import *
-from nodes import VarAccessNode,VarAssignNode,UnaryOpNode,CallNode,FuncDefNode,ListNode,BinOpNode,StringNode,NumberNode
+from nodes import VarAccessNode,VarAssignNode,UnaryOpNode,CallNode,ListNode,BinOpNode,StringNode,NumberNode
 
 
 class ParseResult:

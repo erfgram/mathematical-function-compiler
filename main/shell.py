@@ -1,9 +1,9 @@
-import basic
+import main
 
 while True:
-	text = input('basic > ')
+	text = input('>>> ')
 	if text.strip() == "": continue
-	result, error = basic.run('<stdin>', text)
+	result, error = main.run('<stdin>', text)
 
 	if error:
 		print(error.as_string())

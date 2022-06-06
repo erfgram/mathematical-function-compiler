@@ -7,7 +7,6 @@ from parser import Parser
 from lexer import Lexer
 from tokens import *
 import math
-import os
 
 # RUNTIME RESULT
 class RTResult:
@@ -473,7 +472,8 @@ class BuiltInFunction(BaseFunction):
     x_1 = exec_ctx.symbol_table.get('x1')
     x_2 = exec_ctx.symbol_table.get('x2')
     exp = String(exec_ctx.symbol_table.get('exp'))
-    draw_exp(inputx=[x_1.to_realnum(),x_2.to_realnum()],inputy=exp.to_str())
+    print(eval(exp.to_str()))
+    draw_exp(inputx=[x_1.to_realnum(),x_2.to_realnum()],inputy=eval(exp.to_str()))
     return RTResult().success(Number.null)
   execute_draw.arg_names = ['x1','x2','exp']
 
