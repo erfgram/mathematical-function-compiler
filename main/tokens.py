@@ -26,7 +26,7 @@ TT_NEWLINE		= 'NEWLINE'
 TT_EOF				= 'EOF'
 
 KEYWORDS = [
-  'VAR',
+  'VAR',  # Variable Assignment
 ]
 
 class Token:

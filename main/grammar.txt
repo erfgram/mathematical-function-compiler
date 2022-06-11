@@ -1,13 +1,13 @@
 statements  : NEWLINE* statement (NEWLINE+ statement)* NEWLINE*
 
-statement		: expr
+statement	: expr
 
 expr        : KEYWORD:VAR IDENTIFIER EQ expr
             : comp-expr (comp-expr)*
 
 comp-expr   : arith-expr (arith-expr)*
 
-arith-expr  :	term ((PLUS|MINUS) term)*
+arith-expr  : term ((PLUS|MINUS) term)*
 
 term        : factor ((MUL|DIV|MOD) factor)*
 
